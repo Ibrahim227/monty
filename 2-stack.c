@@ -13,11 +13,11 @@ void nop(stack_t **stack, unsigned int line_number)
 
 
 /**
- * swap_nodes - Swaps the top two elements of the stack
+ * swap_node - Swaps the top two elements of the stack
  * @stack: Pointer
  * @line_number: Interger
  */
-void swap_nodes(stack_t **stack, unsigned int line_number)
+void swap_node(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp;
 
@@ -34,11 +34,11 @@ void swap_nodes(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * add_nodes - Adds node
+ * add_node - Adds node
  * @stack: Pointer
  * @line_number: Interger
  */
-void add_nodes(stack_t **stack, unsigned int line_number)
+void add_node(stack_t **stack, unsigned int line_number)
 {
 	int sum;
 
@@ -54,11 +54,11 @@ void add_nodes(stack_t **stack, unsigned int line_number)
 
 
 /**
- * sub_nodes - delete node
+ * sub_node - delete node
  * @stack: Pointer
  * @line_number: Interg
  */
-void sub_nodes(stack_t **stack, unsigned int line_number)
+void sub_node(stack_t **stack, unsigned int line_number)
 {
 	int sum;
 
@@ -76,11 +76,11 @@ void sub_nodes(stack_t **stack, unsigned int line_number)
 
 
 /**
- * div_nodes - Add node
+ * div_node - Add node
  * @stack: Pointer
  * @line_number: Intergerr
  */
-void div_nodes(stack_t **stack, unsigned int line_number)
+void div_node(stack_t **stack, unsigned int line_number)
 {
 	int sum;
 
