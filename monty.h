@@ -42,6 +42,9 @@ void read_f(FILE *fd);
 int parse_l(char *buffer, int line_number, int format);
 void find_func(char *opcode, char *value, int ln, int format);
 void call_fun(op_func func, char *op, char *val, int ln, int format);
+void err(int err_code, ...);
+void more_err(int err_code, ...);
+void string_err(int err_code, ...);
 
 
 #endif /* MONTY_H */
