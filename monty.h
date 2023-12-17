@@ -70,4 +70,15 @@ void add_node(stack_t **stack, unsigned int line_number);
 void sub_node(stack_t **stack, unsigned int line_number);
 void div_node(stack_t **stack, unsigned int line_number);
 
+void print_char(stack_t **stack, unsigned int line_number);
+void print_str(stack_t **stack, __attribute__((unused))unsigned int ln);
+void rotate_l(stack_t **stack, __attribute__((unused))unsigned int ln);
+void rotate_l(stack_t **stack, __attribute__((unused))unsigned int ln);
+void rotate_l(stack_t **stack, __attribute__((unused))unsigned int ln);
+void rotate_l(stack_t **stack, __attribute__((unused))unsigned int ln);
+void rotate_l(stack_t **stack, __attribute__((unused))unsigned int ln);
+void rotate_l(stack_t **stack, __attribute__((unused))unsigned int ln);
+void rotate_l(stack_t **stack, __attribute__((unused))unsigned int ln);
+void rotate_r(stack_t **stack, __attribute__((unused))unsigned int ln);
+
 #endif /* MONTY_H */
