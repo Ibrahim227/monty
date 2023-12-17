@@ -60,4 +60,10 @@ void free_nodes(void);
 void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln);
 
 
+void add_to_stack(stack_t **new_node, __attribute__((unused))unsigned int ln);
+void print_stack(stack_t **stack, unsigned int line_number);
+void pop_top(stack_t **stack, unsigned int line_number);
+void print_top(stack_t **stack, unsigned int line_number);
+
+
 #endif /* MONTY_H */
