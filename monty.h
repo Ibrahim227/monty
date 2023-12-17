@@ -1,10 +1,13 @@
 #ifndef MONTY_H /* Start Monty */
 #define MONTY_H
-#define SIZE 5
 
+#define _GNU_SOURCE
 #include<stdio.h>
 #include<stdlib.h>
-#include<stddef.h>
+#include<string.h>
+#include<unistd.h>
+#include<ctype.h>
+#include<stdarg.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -45,6 +48,12 @@ void call_fun(op_func func, char *op, char *val, int ln, int format);
 void err(int err_code, ...);
 void more_err(int err_code, ...);
 void string_err(int err_code, ...);
+
+
+int main(int argc, char *argv[]);
+stack_t *create_node(int n);
+void free_nodes(void);
+void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln);
 
 
 #endif /* MONTY_H */
