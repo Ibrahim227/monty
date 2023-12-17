@@ -1,5 +1,6 @@
 #ifndef MONTY_H /* Start Monty */
 #define MONTY_H
+#define SIZE 5
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -34,5 +35,13 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+
+void open_file(char *file_name);
+void read_f(FILE *fd);
+int parse_l(char *buffer, int line_number, int format);
+void find_func(char *opcode, char *value, int ln, int format);
+void call_fun(op_func func, char *op, char *val, int ln, int format);
+
 
 #endif /* MONTY_H */
