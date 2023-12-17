@@ -31,7 +31,7 @@ void read_f(FILE *fd)
 
 	for (line_number = 1; getline(&buffer, &len, fd) != -1; line_number++)
 	{
-		format = parse_line(buffer, line_number, format);
+		format = parse_l(buffer, line_number, format);
 	}
 	free(buffer);
 }
@@ -89,12 +89,12 @@ void find_func(char *opcode, char *value, int ln, int format)
 		{"pint", print_top},
 		{"pop", pop_top},
 		{"nop", nop},
-		{"swap", swap_nodes},
-		{"add", add_nodes},
-		{"sub", sub_nodes},
-		{"div", div_nodes},
-		{"mul", mul_nodes},
-		{"mod", mod_nodes},
+		{"swap", swap_node},
+		{"add", add_node},
+		{"sub", sub_node},
+		{"div", div_node},
+		{"mul", mul_node},
+		{"mod", mod_node},
 		{"pchar", print_char},
 		{"pstr", print_str},
 		{"rotl", rotl},
